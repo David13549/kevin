@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7efe9">
+  <meta name="description" content="Una pequeña historia de Rossela y Kevin.">
+  <title>Rossela & Kevin — Nuestra historia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================
+       PANTALLA DE ENTRADA
+  ========================================================== -->
+  <div id="intro" class="intro">
+    <div class="intro-noise"></div>
+
+    <div class="intro-content">
+      <p class="eyebrow">Una pequeña sorpresa para</p>
+
+      <h1>Mi gordita</h1>
+      <p class="intro-subtitle">otra vez...</p>
+
+      <button id="heartButton" class="heart-button" aria-label="Abrir sorpresa">
+        <span class="heart-core">♥</span>
+        <span class="heart-ring"></span>
+      </button>
+
+      <p id="tapMessage" class="tap-message">Toca el corazón</p>
+
+      <div id="loadingBox" class="loading-box">
+        <div class="loading-track">
+          <div id="loadingBar" class="loading-bar"></div>
+        </div>
+
+        <div class="loading-info">
+          <span id="loadingText">Preparando algo especial...</span>
+          <span id="loadingPercent">0%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-date">04 · 11 · 2026</div>
+  </div>
+
+
+  <!-- =========================================================
+       CONTENIDO PRINCIPAL
+  ========================================================== -->
+  <main id="mainContent" class="site hidden">
+
+    <!-- HERO -->
+    <section class="hero section-padding">
+      <div class="hero-decoration hero-decoration-left"></div>
+      <div class="hero-decoration hero-decoration-right"></div>
+
+      <div class="hero-inner reveal">
+        <p class="eyebrow">Una historia que sigue escribiéndose</p>
+
+        <h2>Rossela <span>&</span> Kevin</h2>
+
+        <p class="hero-date">04 de noviembre de 2026</p>
+
+        <div class="hero-divider">
+          <span></span>
+          <i>♥</i>
+          <span></span>
+        </div>
+
+        <p class="hero-message">
+          Hay historias que comienzan con un día,
+          pero que se siguen construyendo con cada momento.
+        </p>
+
+        <!-- Tiempo fijo para celebrar los 11 meses -->
+        <div class="counter-card">
+          <p class="counter-title">Tiempo escribiendo nuestra historia</p>
+
+          <div class="counter-grid">
+            <div>
+              <strong>11</strong>
+              <span>meses</span>
+            </div>
+
+            <div>
+              <strong>0</strong>
+              <span>días</span>
+            </div>
+
+            <div>
+              <strong>0</strong>
+              <span>horas</span>
+            </div>
+          </div>
+
+          <p class="counter-sentence">11 meses juntos, y nuestra historia apenas comienza.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- GALERÍA -->
+    <section class="memories section-padding">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Nuestros recuerdos</p>
+        <h3>Algunos de mis momentos favoritos</h3>
+        <p>
+          Porque una historia también se cuenta con fotografías.
+        </p>
+      </div>
+
+      <div class="gallery reveal">
+
+        <!--
+          ======================================================
+          CAMBIA SOLO LOS src DE ESTAS IMÁGENES.
+          Ejemplo:
+          src="img/foto1.jpg"
+          ======================================================
+        -->
+
+        <figure class="photo photo-large">
+          <img src="img/foto1.jpeg" alt="Nuestro recuerdo 1" loading="lazy">
+          <figcaption>Un momento que guardo conmigo.</figcaption>
+        </figure>
+
+        <figure class="photo">
+          <img src="img/foto2.jpeg" alt="Nuestro recuerdo 2" loading="lazy">
+          <figcaption>De esos momentos que no necesitan explicación.</figcaption>
+        </figure>
+
+        <figure class="photo photo-tall">
+          <img src="img/foto3.jpeg" alt="Nuestro recuerdo 3" loading="lazy">
+          <figcaption>Y aquí seguimos, escribiendo lo nuestro.</figcaption>
+        </figure>
+
+        <figure class="photo">
+          <img src="img/foto4.jpeg" alt="Nuestro recuerdo 4" loading="lazy">
+          <figcaption>Otra memoria para guardar.</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- CARTA -->
+    <section class="letter-section section-padding">
+      <div class="letter-intro reveal">
+        <p class="eyebrow">Hay algo que quiero decirte</p>
+        <h3>Una carta para ti</h3>
+        <p>
+          No todo lo que siento cabe en una conversación.
+          Así que esta vez quise dejarlo escrito.
+        </p>
+      </div>
+
+      <button id="letterButton" class="envelope-button reveal" aria-label="Abrir carta">
+        <div class="envelope">
+          <div class="envelope-back"></div>
+          <div class="envelope-paper">
+            <span>Para mi gordita</span>
+          </div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-front"></div>
+
+          <span class="wax-seal">♥</span>
+        </div>
+
+        <span class="open-label">Abrir carta</span>
+      </button>
+    </section>
+
+
+    <!-- SECCIÓN STITCH -->
+    <section class="stitch-section section-padding">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Y porque nosotros también somos esto...</p>
+        <h3>Un poquito de ternura</h3>
+      </div>
+
+      <div class="stitch-scene reveal">
+
+        <div class="stitch-character stitch-blue">
+          <img src="img/stitch-blue.png" alt="Stitch azul" loading="lazy">
+        </div>
+
+        <div class="kiss-heart">♥</div>
+
+        <div class="stitch-character stitch-pink">
+          <img src="img/stitch-pink.png" alt="Stitch rosado" loading="lazy">
+        </div>
+
+      </div>
+
+      <p class="stitch-message reveal">
+        Dos personas que quizá no tienen todo resuelto,
+        pero que siguen eligiéndose.
+      </p>
+
+      <div class="stitch-photo reveal">
+        <!-- CAMBIA EL src POR OTRA FOTO DE USTEDES -->
+        <img src="img/foto5.jpeg" alt="Otro recuerdo de nosotros" loading="lazy">
+      </div>
+    </section>
+
+
+    <!-- CARTA FINAL / HISTORIA -->
+    <section class="final-section section-padding">
+      <div class="final-card reveal">
+
+        <div class="final-symbol">∞</div>
+
+        <p class="eyebrow">Y si tuviera que elegir otra vez...</p>
+
+        <h3>
+          Te elegiría<br>
+          nuevamente.
+        </h3>
+
+        <p class="final-text">
+          Gracias por cada conversación, cada risa,
+          cada momento bonito y también por todo lo que
+          hemos aprendido juntos.
+          <br><br>
+          Esto no es el final de nuestra historia.
+          Es solamente otra página.
+        </p>
+
+        <div class="signature">
+          Con cariño,<br>
+          <strong>tu gordito</strong>
+        </div>
+
+        <div class="final-heart">♥</div>
+
+        <p class="final-date">Rossela & Kevin · 04.11.2026</p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       MODAL DE LA CARTA
+  ========================================================== -->
+  <div id="letterModal" class="modal" aria-hidden="true">
+
+    <div class="modal-backdrop"></div>
+
+    <article class="love-letter">
+
+      <button id="closeLetter" class="close-letter" aria-label="Cerrar carta">
+        ×
+      </button>
+
+      <div class="letter-top">
+        <span>Para Mi Gordita</span>
+        <i>♥</i>
+      </div>
+
+      <div class="letter-content">
+
+        <p class="letter-date">Una carta de tu gordito</p>
+
+        <h3>Para la persona que hace especial mi vida.</h3>
+
+        <p>
+          Mi gordita,
+        </p>
+
+        <p>
+          A veces me pongo a pensar en todo lo que ha pasado
+          desde aquel 04 de diciembre de 2025 y me doy cuenta
+          de que no necesito una fecha enorme para saber lo
+          importante que eres para mí.
+        </p>
+
+        <p>
+          Me gustan nuestros momentos simples, las conversaciones,
+          las risas, las ocurrencias y esas pequeñas cosas que
+          probablemente parecen normales, pero que conmigo se
+          quedan guardadas.
+        </p>
+
+        <p>
+          No sé exactamente qué nos espera más adelante,
+          pero sí sé algo: me gusta estar construyendo esta
+          historia contigo.
+        </p>
+
+        <p>
+          Gracias por estar, por compartir conmigo y por ser tú.
+          Espero que sigamos llenando esta historia de recuerdos,
+          fotografías, risas y muchos momentos que algún día
+          podamos mirar hacia atrás y decir:
+          <em>“mira todo lo que hemos vivido”.</em>
+        </p>
+
+        <p class="letter-ending">
+          Te amo mucho.
+        </p>
+
+        <div class="letter-signature">
+          tu gordito
+          <span>♥</span>
+        </div>
+
+      </div>
+    </article>
+  </div>
+
+
+  <!-- =========================================================
+       JS
+  ========================================================== -->
+  <script src="js/script.js"></script>
+</body>
+</html>
